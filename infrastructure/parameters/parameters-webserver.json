@@ -9,7 +9,7 @@
   },
   {
     "ParameterKey": "InstanceType",
-    "ParameterValue": "t1.micro"
+    "ParameterValue": "m1.small"
   },
   {
     "ParameterKey": "VPC",
