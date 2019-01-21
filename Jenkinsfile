@@ -25,7 +25,7 @@ node{
                 ]]
             ]
             } 
-     stage("Webserver Build") {
+     /*stage("Webserver Build") {
         sh """
            #!/bin/sh
            if aws --profile preprod cloudformation --region eu-west-1 describe-stacks \
@@ -42,7 +42,7 @@ node{
             fi
             """
     }
-
+    */
      stage("Build Triggered Notify Slack"){
             gitCommit = sh(returnStdout: true, script: "git log -1 --pretty=format:'%h %an %s'").trim()
             gitFullSha1 = sh(returnStdout: true, script: "git rev-parse HEAD").trim()
