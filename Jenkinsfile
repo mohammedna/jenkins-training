@@ -7,29 +7,9 @@ node{
     def credentialsId = "${env.SSH_CREDENTIALS_ID}"
      
     stage ('Checkout'){
-        git branch: 'master', url: 'https://github.com/telegraph/jenkins-training.git'
+        git branch: 'master', url: "https://github.com/telegraph/${projectName}"
     }
 
-    /* stage("Checkout"){
-            echo "git checkout"
-            checkout changelog: false, poll: false, scm: [
-                $class: 'GitSCM',
-                branches: [[
-                    name: 'master'
-                ]],
-                doGenerateSubmoduleConfigurations: false,
-                extensions: [[
-                    $class: 'WipeWorkspace'
-                ], [
-                    $class: 'CleanBeforeCheckout'
-                ]],
-                submoduleCfg: [],
-                userRemoteConfigs: [[
-                    url: "git@github.com:telegraph/${projectName}.git"
-                ]]
-            ]
-            }
-      */ 
      /*stage("Webserver Build") {
         sh """
            #!/bin/sh
