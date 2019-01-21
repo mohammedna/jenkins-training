@@ -2,7 +2,7 @@ properties([pipelineTriggers([githubPush()])])
 
 node{
      
-    def projectName      = "jenkins-githook"
+    def projectName      = "jenkins-training"
     def slackToken       = "${env.SLACK_PLATFORMS_ALERTS}"
     def credentialsId = "${env.SSH_CREDENTIALS_ID}"
 
