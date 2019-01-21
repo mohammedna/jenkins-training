@@ -1,0 +1,30 @@
+[
+  {
+    "ParameterKey": "ApplicationName",
+    "ParameterValue": "webserver"
+  },
+  {
+    "ParameterKey": "Environment",
+    "ParameterValue": "training"
+  },
+  {
+    "ParameterKey": "InstanceType",
+    "ParameterValue": "t1.micro"
+  },
+  {
+    "ParameterKey": "VPC",
+    "ParameterValue": "vpc-7d274919"
+  },
+  {
+    "ParameterKey": "SubnetAPublic",
+    "ParameterValue": "subnet-6399143b"
+  },
+  {
+    "ParameterKey": "KeyName",
+    "ParameterValue": "websupport"
+  },
+  {
+    "ParameterKey": "BillingTag",
+    "ParameterValue": "aem"
+  }
+]
