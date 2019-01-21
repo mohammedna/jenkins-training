@@ -7,7 +7,7 @@ node{
     def credentialsId = "${env.SSH_CREDENTIALS_ID}"
      
     stage ('Checkout'){
-        git branch: 'master', url: 'https://github.com/telegraph/${projectName}.git'
+        git branch: 'master', url: 'https://github.com/telegraph/jenkins-training.git'
     }
 
     /* stage("Checkout"){
