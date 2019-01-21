@@ -6,7 +6,9 @@ node{
     def slackToken       = "${env.SLACK_PLATFORMS_ALERTS}"
     def credentialsId = "${env.SSH_CREDENTIALS_ID}"
      
-    git url: 'https://github.com/telegraph/${projectName}.git', branch: 'master'
+    stage ('Checkout'){
+        git branch: 'master', url: 'https://github.com/telegraph/${projectName}.git'
+    }
 
     /* stage("Checkout"){
             echo "git checkout"
